@@ -17,8 +17,8 @@ HTML · CSS (`/style`) · JavaScript (`/js`) · fontes e imagens (`/fonts`, `/im
 Abra `index.html` no navegador (projeto é 100% estático).
 
 ## 🌐 Deploy
-O projeto é estático e pode ser publicado no **Vercel**.
-Após o deploy, o link ficará aqui.
+O projeto é estático e pode ser visualizado no **Vercel**.
+https://phonetics-lab.vercel.app/
 
 ## 📸 Imagens
 Prints e ícones em `/img`. Dê nomes descritivos (ex.: `screenshot-palavras.png`).
@@ -27,10 +27,17 @@ Prints e ícones em `/img`. Dê nomes descritivos (ex.: `screenshot-palavras.png
 Em construção. Próximos passos:
 
 - [ ] Adicionar meta tags (SEO/OG)
-- [ ] Publicar no Vercel
 - [ ] Criar banner de Social Preview
 - [ ] Implementar lógica de conversão de palavras para **IPA**
 - [ ] Conectar com uma API ou dicionário de fonética
+- [ ] Melhorar responsividade (tablet/mobile)
 
 ## 📄 Licença
 Sem licença definida ainda.
+
+## 🔮 Futuro
+- Explorar uma versão do **PhoneticsLab em React** como projeto separado, aproveitando a base de design e conteúdo deste site.
+
+## 📝 Notas pessoais
+Este foi o meu **primeiro projeto em HTML/CSS/JS**, criado em outubro de 2024.  
+Mantido no GitHub como marco inicial da minha jornada em desenvolvimento web.
