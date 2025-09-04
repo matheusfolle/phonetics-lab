@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Phonetic's Laboratory</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+                body {
+                    font-family: 'Montserrat', sans-serif;
+                    background-color: #f3f4f6;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                }
+        
+                .article-container {
+                    background-color: white;
+                    border-radius: 12px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    padding: 20px;
+                    max-width: 1000px;
+                    width: 100%;
+                    margin: 20px auto;
+                    text-align: center;
+                }
+        
+                .article-container h1 {
+                    font-family: 'DM Serif Text', serif;
+                    font-size: 1.8em;
+                    color: #333;
+                    margin-bottom: 15px;
+                }
+        
+                .article-container p {
+                    font-size: 1em;
+                    color: #666;
+                    line-height: 1.6;
+                    margin-bottom: 20px;
+                }
+        
+                .article-container img {
+                    width: 100%;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: transform 0.2s ease;
+                }
+        
+                .article-container img:hover {
+                    transform: scale(1.05);
+                }
+        
+                .overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1000;
+                    display: none;
+                }
+        
+                .overlay img {
+                    max-width: 90%;
+                    max-height: 90%;
+                    border-radius: 10px;
+                }
+        
+                .overlay.close {
+                    cursor: pointer;
+                }
+    </style>
+</head>
+<body class="uniquefont">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo1.jpeg" alt="PhoneticsLab Logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Exercícios</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <a href="palavras.html">Memorize Palavras</a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="#">Alfabeto Fonético</a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="#">Técnicas Avançadas</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="article-container" id="article-container"></div>
+            <div class="overlay" id="image-overlay">
+                <img src="" alt="Imagem Ampliada" id="overlay-image">
+            </div>
+            <div class="divzinha">
+            <p style="text-align: center;">Continue <a href="artigos.html">aprendendo!</a></p>
+        </div>
+        <section>
+            <div class="search-bar-container">
+                <input type="text" id="search-input" placeholder="Pesquisar em todo o site" />
+                <img src="img/magglass.png" alt="Pesquisar" class="search-icon" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h3>Sobre nós</h3>
+            <p>O PhoneticsLab é um portal dedicado a auxiliar estudantes de linguagem a alcançar seus objetivos através do Alfabeto Fonético Internacional.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links rápidos</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="#">Exercícios</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>E-mail: info@phoneticslab.com</p>
+            <p>Telefone: +55 (41) 12456-7890</p>
+            <p>Endereço: Rua Emiliano Perneta, 286 - Curitiba, PR</p>
+        </div>
+        <div class="footer-section">
+            <h3>Siga-nos</h3>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 PhoneticsLab. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/article.js"></script>
+</body>
+</html>

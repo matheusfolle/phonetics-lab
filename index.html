@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Phonetic's Laboratory</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+    </style>
+  </head>
+  <body class="uniquefont">
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo1.jpeg" alt="PhoneticsLab Logo" />
+        </a>
+      </div>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artigos.html">Artigos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="ranking.html">Ranking</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn" onclick="toggleDropdown(event)"
+              >Exercícios</a
+            >
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <a href="palavras.html">Memorize Palavras</a>
+              </div>
+              <div class="dropdown-item">
+                <a href="#">Alfabeto Fonético</a>
+              </div>
+              <div class="dropdown-item">
+                <a href="#">Técnicas Avançadas</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome">
+        <h1>Boas-vindas ao PhoneticsLab</h1>
+        <p>
+          Descubra seu potencial linguístico com um plano de ensino imersivo que
+          explora o Alfabeto Fonético Internacional.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <h3>Aprenda</h3>
+            <br />
+            <p>
+              Acesse lições interativas para múltiplas linguagens a partir do
+              Alfabeto Fonético Internacional.
+            </p>
+            <a href="cursos.html">Explore cursos →</a>
+          </div>
+          <div class="card">
+            <h3>Pratique</h3>
+            <br />
+            <p>
+              Melhore suas habilidades com quizzes e exercícios acoplados à
+              técnica de revisão espaçada.
+            </p>
+            <a href="cursos.html">Comece a praticar →</a>
+          </div>
+          <div class="card">
+            <h3>Conecte-se</h3>
+            <br />
+            <p>
+              Participe de grupos de linguagem e fóruns liderados por nossos
+              representantes.
+            </p>
+            <a href="comunidade.html">Encontre parceiros →</a>
+          </div>
+        </div>
+      </section>
+      <section class="sounds">
+        <h2 style="font-size: 1.5em">Sons da fala</h2>
+        <p>
+          Acesse nossos cursos e conheça os diferentes sons fonéticos emitidos
+          por cada língua.
+        </p>
+        <br />
+
+        <div class="carousel-container">
+          <div class="carousel-track" id="carousel-track"></div>
+        </div>
+      </section>
+      <section class="latest-posts">
+        <h2>Últimos envios</h2>
+        <div class="posts">
+          <div class="post">
+            <h3 class="accordion-header" onclick="toggleAccordion(2)">
+              Uma árvore genealógica da linguagem
+            </h3>
+            <br />
+            <p>
+              Trata-se de uma visão abrangente das línguas nórdicas em suas
+              antigas famílias de idiomas.
+            </p>
+            <div id="content2" class="accordion-content">
+              <p>
+                Explore a evolução das línguas ao longo dos séculos desbravando
+                o poder influente das línguas nórdicas.
+              </p>
+            </div>
+            <br />
+            <a href="article.html">Leia mais →</a>
+          </div>
+          <div class="post">
+            <h3 class="accordion-header" onclick="toggleAccordion(1)">
+              10 dicas para tornar-se poliglota
+            </h3>
+            <br />
+            <p>
+              Descubra táticas efetivas para acelerar suas habilidades de
+              linguagem em jornada de aprendizado.
+            </p>
+            <div id="content1" class="accordion-content">
+              <p>
+                Essas dicas foram desenvolvidas por linguistas e poliglotas
+                experientes para facilitar o aprendizado e otimizar o tempo de
+                estudo.
+              </p>
+            </div>
+            <br />
+            <a href="#">Leia mais →</a>
+          </div>
+        </div>
+      </section>
+      <section class="events-section">
+        <h2>Eventos</h2>
+        <div class="event-item">
+          <a href="#" class="event-title">Como usar o AFI ao meu favor?</a>
+          <span class="event-date">15 de Outubro de 2024</span>
+        </div>
+        <div class="event-item">
+          <a href="#" class="event-title">Noite de filme alemão</a>
+          <span class="event-date">20 de Maio de 2024</span>
+        </div>
+        <div class="event-item">
+          <a href="#" class="event-title">Italiano com culinária</a>
+          <span class="event-date">27 de Janeiro de 2023</span>
+        </div>
+      </section>
+      <section>
+        <div class="search-bar-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Pesquisar em todo o site"
+          />
+          <img src="img/magglass.png" alt="Pesquisar" class="search-icon" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-section">
+        <h3>Sobre nós</h3>
+        <p>
+          O PhoneticsLab é um portal dedicado a auxiliar estudantes de linguagem
+          a alcançar seus objetivos através do Alfabeto Fonético Internacional.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artigos.html">Artigos</a></li>
+          <li><a href="cursos.html">Cursos</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="#">Exercícios</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p>E-mail: info@phoneticslab.com</p>
+        <p>Telefone: +55 (41) 12456-7890</p>
+        <p>Endereço: Rua Emiliano Perneta, 286 - Curitiba, PR</p>
+      </div>
+      <div class="footer-section">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 PhoneticsLab. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="js/script.js">
+      /*JS Global*/
+    </script>
+    <script src="js/carousel.js">
+      /*JS da Página*/
+    </script>
+  </body>
+</html>

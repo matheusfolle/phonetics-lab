@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Phonetic's Laboratory</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+</head>
+<body class="uniquefont">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo1.jpeg" alt="PhoneticsLab Logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown(event)">Exercícios</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <a href="palavras.html">Memorize Palavras</a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="#">Alfabeto Fonético</a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="#">Técnicas Avançadas</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="sessaodejogos">
+        <h1 class="mainh1">Sessão de Exercícios</h1>
+        <p style="margin-bottom: 30px;">Role a página para participar de um de nossos exercícios!</p>
+        <img src="img/memo.webp" alt="Áreas de Memória" style="border-radius: 10px; max-width: 500px; align-items: center;" class="expandable-image">
+    </div>
+    <div class="image-overlay" id="image-overlay">
+        <img src="" alt="Imagem Expandida" id="expanded-image">
+        <button class="close-button" id="close-button">×</button>
+    </div>
+        <h2 class="mainh1">Clique em cada uma das palavras para descobrir seu significado!</h1>
+        <p style="text-align: center;">Participe desta brincadeira, as traduções são diversas.</p>
+        <div id="conteim" class="courses-section">
+            <div class="item-conteim" data-word="Saggezza" data-translation="Wisdom">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Saggezza</span>
+                <a href="#" class="discover">Descubra</a>
+            </div>
+            <div class="item-conteim" data-word="Intelligenza" data-translation="Intelligence">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Intelligenza</span>
+                <a href="#" class="discover">Discover</a>
+            </div>
+            <div class="item-conteim" data-word="Astucia" data-translation="Cuning">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Astucia</span>
+                <a href="#" class="discover">اكتشاف</a>
+            </div>  
+            <div class="item-conteim" data-word="Accuracy" data-translation="Exatidão">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Accuracy</span>
+                <a href="#" class="discover">Découverte</a>
+            </div>
+            <div class="item-conteim" data-word="Happiness" data-translation="Felicidade">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Happiness</span>
+                <a href="#" class="discover">Scoperta</a>
+            </div>
+            <div class="item-conteim" data-word="Polyglotte" data-translation="Poliglot">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Polyglotte</span>
+                <a href="#" class="discover">発見</a>
+            </div>
+            <div class="item-conteim" data-word="STEM" data-translation="SciTechEngMath">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">STEM</span>
+                <a href="#" class="discover">Entdeckung</a>
+            </div>
+            <div class="item-conteim" data-word="Programmer" data-translation="Programador">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Programmer</span>
+                <a href="#" class="discover">Ontdekking</a>
+            </div>
+            <div class="item-conteim" data-word="Meta-learner" data-translation="Meta-aprendiz">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Meta-learner</span>
+                <a href="#" class="discover">открытие</a>
+            </div>
+            <div class="item-conteim" data-word="Força" data-translation="Strength">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Força</span>
+                <a href="#" class="discover">发现</a>
+            </div>
+            <div class="item-conteim" data-word="Bilingual" data-translation="Bilingue">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Bilingual</span>
+                <a href="#" class="discover">Descubrimiento</a>
+            </div>
+            <div class="item-conteim" data-word="Discernimiento" data-translation="Discernimento">
+                <span class="star" style="text-align: center;">⭐</span>
+                <span class="word">Discernimiento</span>
+                <a href="#" class="discover">발견</a>
+            </div>    
+    </div>
+    <h2 class="carousel-title" style="padding: 20px">Clique na bandeira do país correspondente para selecionar outro idioma:</h2>
+    <div class="carousel-true">
+    <section class="carousel-section">
+        <h2 class="uniquefont" style="margin-bottom: 80px; text-align: center; font-size: 1.0em;">Explore outras línguas!</h2>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-item1">
+                            <img src="img/paises/ad.png" alt="Andorra">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/al.png" alt="Albânia">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/bb.png" alt="Barbados">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/br.png" alt="Brasil">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/bv.png" alt="Bouvet Island">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/cl.png" alt="Chile">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/cn.png" alt="China">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/cz.png" alt="República Tcheca">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/de.png" alt="Alemanha">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/dk.png" alt="Dinamarca">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/es.png" alt="Espanha">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/fr.png" alt="França">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/gh.png" alt="Gana">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/gr.png" alt="Grécia">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/il.png" alt="Israel">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/vn.png" alt="Vietnã">
+                        </div>
+                        <div class="carousel-item1">
+                            <img src="img/paises/kr.png" alt="Coreia do Sul">
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev">❮</button>
+                    <button class="carousel-btn next">❯</button>
+                </div>
+            </section>
+        </div>
+            <div class="ranking">
+            <h2 class="uniquefont" style="text-align: center; font-size: 1em;">Participe do <a href="ranking.html">ranking</a> de acordo com seus acertos! ⭐</h2>
+        </div>
+        <section>
+            <div class="search-bar-container">
+                <input type="text" id="search-input" placeholder="Pesquisar em todo o site" />
+                <img src="img/magglass.png" alt="Pesquisar" class="search-icon" />
+            </div>
+        </section>
+</main>
+    <footer>
+        <div class="footer-section">
+            <h3>Sobre nós</h3>
+            <p>O PhoneticsLab é um portal dedicado a auxiliar estudantes de linguagem a alcançar seus objetivos através do Alfabeto Fonético Internacional.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links rápidos</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="#">Exercícios</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>E-mail: info@phoneticslab.com</p>
+            <p>Telefone: +55 (41) 12456-7890</p>
+            <p>Endereço: Rua Emiliano Perneta, 286 - Curitiba, PR</p>
+        </div>
+        <div class="footer-section">
+            <h3>Siga-nos</h3>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 PhoneticsLab. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/palavras.js"></script>
+</body>
+</html>

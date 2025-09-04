@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Phonetic's Laboratory</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+    </style>
+</head>
+<body class="uniquefont">
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo1.jpeg" alt="PhoneticsLab Logo">
+            </a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="ranking.html">Ranking</a></li>
+                <li class="dropdown">
+                    <a href="exercicios.html" class="dropbtn" onclick="toggleDropdown(event)">Exercícios</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <a href="palavras.html">Memorize Palavras</a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="#">Alfabeto Fonético</a>
+                        </div>
+                        <div class="dropdown-item">
+                            <a href="#">Técnicas Avançadas</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="formulario">
+            <h1>Inscreva-se</h1>
+            <p class="intro-text">
+                Descubra o idioma ideal para começar sua jornada no universo do poliglotismo. Este é o seu primeiro passo rumo a uma nova aventura cultural e linguística. Estamos aqui para facilitar seu caminho.
+            </p>
+            <div class="form-container">
+                <form>
+                    <fieldset>
+                        <legend>Candidate-se</legend>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Informe seu nome completo" required>
+                        
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Informe o número com código de área e DDD">
+                        
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" required placeholder="Escolha uma senha com letras maiúsculas e minúsculas, números e símbolos" autocomplete="current-password">
+                        
+                        <label for="confirma_senha">Confirme a Senha:</label>
+                        <input type="password" id="confirma_senha" name="confirma_senha" required placeholder="Confirme sua senha com sabedoria">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Conte-nos mais sobre você</legend>
+                        <label for="data_nascimento">Quando você nasceu?</label>
+                        <input type="text" id="data_nascimento" name="data_nascimento" required placeholder="dd/mm/yyyy">
+                        
+                        <label for="lingua_nativa">Qual é a sua língua nativa?</label>
+                        <input type="text" id="lingua_nativa" name="lingua_nativa" placeholder="Ex.: Português, Espanhol" required>
+                        
+                        <label for="nivel_lingua_secundaria">Como você avalia seu nível na segunda língua?</label>
+                        <input type="range" id="nivel_lingua_secundaria" name="nivel_lingua_secundaria" min="1" max="5">
+                        <small>1 = Iniciante, 5 = Fluente</small>
+                        
+                        <label for="livrofavorito">Qual o seu livro favorito e por quê?</label>
+                        <textarea id="livrofavorito" name="livrofavorito" rows="8" placeholder="Por que nós deveríamos ler o seu livro favorito?"></textarea>
+                        
+                        <label for="palavra_favorita">Escolha uma palavra com etimologia interessante:</label>
+                        <input type="text" id="palavra_favorita" name="palavra_favorita" class="placeholder-style" placeholder="Palavras do Grego e do Latim ganham mais pontos" required>
+
+                        <label for="motivacao">Por que você gostaria de fazer parte desta comunidade?</label>
+                        <textarea id="motivacao" name="motivacao" rows="6" placeholder="Conte-nos o que o(a) motiva a se inscrever!"></textarea>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Preferências</legend>
+                        <div class="inline">
+                            <label><input type="radio" name="contato_preferido" value="email" checked> E-mail</label>
+                        </div>
+                        <div class="inline">
+                            <label><input type="radio" name="contato_preferido" value="telefone">Telefone</label>
+                        </div>
+                        <div class="inline">
+                            <label>
+                                <input type="checkbox" id="discord-checkbox" name="notificacoes" value="discord">
+                                Discord
+                            </label>
+                        </div>
+                        
+                        <div id="discord-container" style="display: none;">
+                            <label for="discord-username">Nome de usuário do Discord:</label>
+                            <input type="text" id="discord-username" name="discord-username" placeholder="Inclua letras e números">
+                        </div>
+                        <label for="curso">Curso:</label>
+                        <select id="curso" name="curso" required>
+                            <option value="AFI">Alfabeto Fonético Internacional como início do Poliglotismo</option>
+                            <option value="História e Línguas">Como a história influencia línguas e padrões de linguagem</option>
+                            <option value="Inglês Antigo">O Inglês Antigo sob uma perspectiva atual</option>
+                            <option value="Futuro das linguagens">O futuro das linguagens</option>
+                        </select>
+                    </fieldset>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section>
+        <div class="search-bar-container">
+            <input type="text" id="search-input" placeholder="Pesquisar em todo o site" />
+            <img src="img/magglass.png" alt="Pesquisar" class="search-icon" />
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h3>Sobre nós</h3>
+            <p>O PhoneticsLab é um portal dedicado a auxiliar estudantes de linguagem a alcançar seus objetivos através do Alfabeto Fonético Internacional.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links rápidos</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="#">Exercícios</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>E-mail: info@phoneticslab.com</p>
+            <p>Telefone: +55 (41) 12456-7890</p>
+            <p>Endereço: Rua Emiliano Perneta, 286 - Curitiba, PR</p>
+        </div>
+        <div class="footer-section">
+            <h3>Siga-nos</h3>
+            <ul>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">TikTok</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 PhoneticsLab. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/expands.js"></script>
+</body>
+</html>
