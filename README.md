@@ -17,11 +17,7 @@ HTML · CSS (`/style`) · JavaScript (`/js`) · fontes e imagens (`/fonts`, `/im
 Abra `index.html` no navegador (projeto é 100% estático).
 
 ## 🌐 Deploy
-O projeto é estático e pode ser visualizado no **Vercel**.
-https://phonetics-lab.vercel.app/
-
-## 📸 Imagens
-Prints e ícones em `/img`. Dê nomes descritivos (ex.: `screenshot-palavras.png`).
+O projeto é estático e pode ser visualizado no [PhoneticsLab no Vercel](https://phonetics-lab.vercel.app/)
 
 ## 📌 Status
 Em construção. Próximos passos:
