@@ -3,7 +3,7 @@
 Site estático com páginas sobre **fonética** e **IPA** para estudo de pronúncia.
 
 ## 📂 Páginas
-- `index.html` – home
+- `index.html` – home 
 - `palavras.html` – lista de palavras
 - `artigo.html` / `artigos.html` – artigos
 - `cursos.html` – materiais/links
@@ -17,7 +17,7 @@ HTML · CSS (`/style`) · JavaScript (`/js`) · fontes e imagens (`/fonts`, `/im
 Abra `index.html` no navegador (projeto é 100% estático).
 
 ## 🌐 Deploy
-O projeto é estático e pode ser visualizado no [PhoneticsLab no Vercel](https://phonetics-lab.vercel.app/)
+O projeto é estático e pode ser visualizado na página de [PhoneticsLab no Vercel](https://phonetics-lab.vercel.app/)
 
 ## 📌 Status
 Em construção. Próximos passos:
