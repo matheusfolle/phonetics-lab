@@ -25,9 +25,12 @@ Prints e ícones em `/img`. Dê nomes descritivos (ex.: `screenshot-palavras.png
 
 ## 📌 Status
 Em construção. Próximos passos:
+
 - [ ] Adicionar meta tags (SEO/OG)
 - [ ] Publicar no Vercel
 - [ ] Criar banner de Social Preview
+- [ ] Implementar lógica de conversão de palavras para **IPA**
+- [ ] Conectar com uma API ou dicionário de fonética
 
 ## 📄 Licença
 Sem licença definida ainda.
