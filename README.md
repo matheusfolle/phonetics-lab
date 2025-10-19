@@ -10,14 +10,14 @@ Site estático com páginas sobre **fonética** e **IPA** para estudo de pronún
 - `ranking.html` – ranking/estatísticas
 - `comunidade.html` – comunidade
 
+## 🌐 Deploy
+O projeto é estático e pode ser visualizado na página de [PhoneticsLab no Vercel](https://phonetics-lab.vercel.app/)
+
 ## 🧰 Stack
 HTML · CSS (`/style`) · JavaScript (`/js`) · fontes e imagens (`/fonts`, `/img`).
 
 ## ▶️ Como rodar localmente
 Abra `index.html` no navegador (projeto é 100% estático).
-
-## 🌐 Deploy
-O projeto é estático e pode ser visualizado na página de [PhoneticsLab no Vercel](https://phonetics-lab.vercel.app/)
 
 ## 📌 Status
 Em construção. Próximos passos:
