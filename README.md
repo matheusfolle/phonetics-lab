@@ -11,7 +11,7 @@
 
 **Plataforma educacional para estudo de fonética, pronúncia e o Alfabeto Fonético Internacional (IPA)**
 
-[🌐 Ver Projeto ao Vivo](https://phoneticslab.vercel.app)
+[🌐 Ver Projeto ao Vivo](https://phonetics-lab.vercel.app/)
 
 </div>
 
